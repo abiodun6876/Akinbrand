@@ -1,29 +1,64 @@
-import './App.css';
+import React from 'react';
+import './index.css';
+import Card from './Card';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
-  );
-}
+      <div className="app">
+            <header>
+              <div>
+                      
+                            
+                                </div>
+                    <nav>
+                              <ul className="nav-links">
+                                          <li><a href="#features">Features</a></li>
+                                                      <li><a href="#services">Services</a></li>
+                                                                  <li><a href="#contact">Contact</a></li>
+                                                                            </ul>
+                                                                                    </nav>
+                                                                                            <h1>Introducing AKINBRAND - Your Path to Digital Success!</h1>
+                                                                                                    <p className="subtitle">Are you ready to elevate your brand's online presence and unlock new opportunities? Look no further than AKINBRAND!</p>
+                                                                                                          </header>
+                                                                                                                <section id="features" className="content">
+                                                                                                                        <h2 className="section-title">Why Choose AKINBRAND?</h2>
+                                                                                                                                <div className="card-container">
+                                                                                                                                          <Card
+                                                                                                                                                      title="Tailored Social Media Marketing Strategies"
+                                                                                                                                                                  description="We develop customized social media marketing strategies tailored to your brand's goals, target audience, and industry."
+                                                                                                                                                                            />
+                                                                                                                                                                                      <Card
+                                                                                                                                                                                                  title="Engaging Content Creation"
+                                                                                                                                                                                                              description="Our team specializes in creating compelling and shareable content that resonates with your target market."
+                                                                                                                                                                                                                        />
+                                                                                                                                                                                                                                  <Card
+                                                                                                                                                                                                                                              title="Result-driven Campaign Management"
+                                                                                                                                                                                                                                                          description="We meticulously manage your digital marketing campaigns to ensure optimal results and provide insightful reports."
+                                                                                                                                                                                                                                                                    />
+                                                                                                                                                                                                                                                                              <Card
+                                                                                                                                                                                                                                                                                          title="Brand Identity Development"
+                                                                                                                                                                                                                                                                                                      description="We offer brand identity development services to help you establish a unique and memorable brand image."
+                                                                                                                                                                                                                                                                                                                />
+                                                                                                                                                                                                                                                                                                                          <Card
+                                                                                                                                                                                                                                                                                                                                      title="Website Design and Optimization"
+                                                                                                                                                                                                                                                                                                                                                  description="We provide top-notch website design and optimization services to create user-friendly and visually appealing websites."
+                                                                                                                                                                                                                                                                                                                                                            />
+                                                                                                                                                                                                                                                                                                                                                                      <Card
+                                                                                                                                                                                                                                                                                                                                                                                  title="And much more!"
+                                                                                                                                                                                                                                                                                                                                                                                              description="We offer a comprehensive range of digital marketing services to meet your specific needs and goals."
+                                                                                                                                                                                                                                                                                                                                                                                                        />
+                                                                                                                                                                                                                                                                                                                                                                                                                </div>
 
-export default App;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        <p className="cta">Ready to take your social media marketing game to the next level?</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                <a href="https://www.akinbrand.com.ng/" className="btn">Visit our website</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <p className="contact">Contact us today to schedule a consultation and let's embark on this exciting journey together.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                              </section>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    <footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p className="hashtag">#AKINBRAND #DigitalMarketing #SocialMediaMarketing #OnlineSuccess</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        };
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                    export default App;
